@@ -42,11 +42,15 @@
         <form action="https://formsubmit.co/info.shsconcepts@gmail.com" method="post">
 
             <h3> Send us an Email</h3>
-            <input type="text"id="name"placeholder="Your Name" required>
-            <input type="text"id="phone"placeholder="Your Phone Number" required>
-            <input type="email" id="email"placeholder="Your Email"required>
-            <textarea id="project-info"rows="10" name="information" placeholder="Please tell us about your project" required></textarea>
+            <input type="text"id="name" name="Name: "placeholder="Your Name" required>
+            <input type="text"id="phone" name="Phone Number: "placeholder="Your Phone Number" required>
+            <input type="email" id="email" name="Email: " attribute="_replyto"placeholder="Your Email"required>
+            <textarea id="project-info"rows="10" name="Project Description: " placeholder="Please tell us about your project" required></textarea>
             <button type="submit">Send</button>
+
+            
+            <input type="hidden" name="_subject" value="Project Inquiry Website Test">
+            <input type="hidden" name="_autoresponse" value="Thank you for inquiring with SHS about your project! We'll contact you as soon as possible">
 
 
 
