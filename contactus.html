@@ -8,11 +8,14 @@
     <title>ContactUs</title>
 </head>
 <body>
-    <div class="info-links">
+    <div class="info-links other-links-box">
 
-        <img class="logo-img" src="images/shs_logo_1.png" alt="SHS Logo"> 
-        <h1>Contact Us</h1>
-        
+        <div class="logo-title">
+
+            <img class="logo-img" src="images/shs_logo_1.png" alt="SHS Logo"> 
+            <h1>Contact Us</h1>
+
+        </div>
         
             <ul class="nav-links">
                 <li> <a class="nav-links"href="index.html">Home</a></li>
@@ -26,26 +29,30 @@
         
     </div>
 
-    <div class="contact-box">
+    
 
         <div class="contact-info">
 
-            <h2> <img class="contact-icon" src="images/email_icon.png" alt="email icon">info.shsconcepts@gmail.com</h2>
-            <h2> <img class="contact-icon" src="images/phone_icon.png" alt="phone icon">(519)212-0638 </h2>
+             <img class="contact-icon" src="images/email_icon.png" alt="email icon">
+             <h2>info.shsconcepts@gmail.com</h2>
+
+
+            <img class="contact-icon" src="images/phone_icon.png" alt="phone icon">
+            <h2>(519)212-0638</h2>
 
         </div>
 
-    </div>
+    
 
     <div class="message-box">
 
         <form action="https://formsubmit.co/info.shsconcepts@gmail.com" method="post">
 
-            <h3> Send us an Email</h3>
+            <h3 class="email-us"> Send us an Email</h3>
             <input type="text"id="name" name="name"placeholder="Your Name" required>
             <input type="text"id="phone" name="number"placeholder="Your Phone Number" required>
             <input type="email" id="email" name="email" attribute="_replyto"placeholder="Email Address"required>
-            <textarea id="project-info"rows="10" name="details" placeholder="Please tell us about your project" required></textarea>
+            <textarea id="project-info"rows="6" name="details" placeholder="Please tell us about your project" required></textarea>
             <button type="submit">Send</button>
 
             

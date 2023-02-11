@@ -1,186 +1,403 @@
-
-
-body{
-    background-color:darkgray;
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#dfd8c8;
     color:black;
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
     margin:0;
     padding:0;
 }
 
-.info-links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.info-links,.home-links-box{
     background-color:  #1F2937;
-    color: rgb(236, 225, 47);
-    padding: 1% 1% 1%;
+    color: whitesmoke;
 }
 
-ul.nav-links{
-    display:flex;
-    flex-wrap: wrap;
+ul.nav-links,ul.home-links{
     list-style-type: none;
-    gap: 24px;
-    margin:0;
-    padding:0;
 }
 
-a.nav-links{
+a.nav-links,a.home-links{
     text-decoration: none;
     color: white;
     font-size: x-large;
 }
 
-.logo-img{
-    padding:0% 1% 1%;
+@media(max-width: 1095px){
+
+    .mobile-logo{
+        margin-top: 3vh;
+    }
+    .logo-title{
+        display: none;
+    }
+
+    .home-links-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height:100vh;
+        background-color:  #1F2937;
+    }
+
+    .home-links{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top:10vh;
+        padding:0;
+    }
+    
+
+    ul.nav-links{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin:0;
+        padding:3%;
+    }
+    
+    ul.home-links{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-image{
+        display: none;
+    }
+
+    .aboutus-content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:3% 3% 3%;
+    }
+
+    .truck-img{
+        width: 90vw;
+        height:auto;
+        border-radius: 5%;
+        border:transparent;
+    }
+
+    .aboutus-paragraph{
+        padding: 1% 1% 1%;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .aboutus-paragraph p{
+        line-height: 1.2;
+    }
+
+
+    .services{
+        margin:1% 1% 1%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services-text{
+        margin: 1% 1% 1%;
+        padding: 1% 1% 1%;
+    }
+
+    .colour-options{
+        background-color: white;
+        border-radius: 5%;
+        border: 4px solid transparent;
+        text-align: center;
+        margin: 1% 1% 1%;
+        padding: 1% 1% 1%;
+    }
+    .colours-img{
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .services-list{
+        margin: 2% 2% 2%;
+    }
+    .finish-list{
+        margin: 2% 2% 2%;
+    }
+
+    ul.finish-list li{
+        margin: 2% 2% 2%;
+    }
+
+    ul.services-list li{
+        margin: 2% 2% 2%;
+    }
+
+    .gallery-images{
+        width: 90vw;
+        height:auto;
+        border-radius: 15px;
+        margin-top:2%;
+        border: 4px solid transparent;
+    }
+
+    h2.group-name{
+        text-align: center;
+    }
+    
+    .group-name-box{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-icon{
+        margin-right: 1em;
+    }
+
+    .contact-info{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin: 1% 1% 1%;
+        padding: 0% 2% 0%;
+    }
+
+    .message-box{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3.email-us{
+        align-self: center;
+    }
+
+    form{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 0% 2% 2%;
+        width:90vw;
+        max-width: 600px;
+
+    }
+
+    form input,form textarea{
+        border:0 solid transparent;
+        border-radius: 15px;
+        margin:2%;
+        padding: 20px;
+        outline:none;
+        background-color: whitesmoke;
+        font-size: 16px;
+    }
+
+    form button{
+        padding:15px;
+        background-color: #e0474c;
+        font-size: 18px;
+        border:0;
+        outline:none;
+        cursor:pointer;
+        width:150px;
+        margin:20px auto 0;
+        border-radius: 30px;
+    }   
 }
 
-.home-image{
-    width:100%;
-    max-height: 86.62vh;
-}
+@media(min-width: 1096px){
 
-.aboutus-content{
-    padding: 1%;
-    display: flex;
-    flex-wrap: wrap;
-}
+    .logo-title,.home-logo{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:1% 1% 1%;
+    }
 
-.truck-img{
-    max-width: 100%;
-    height:auto;
-    border-radius: 30px;
-    border: 4px solid transparent;
-}
-.aboutus-paragraph{
-    background-color: white;
-    border-radius: 30px;
-    border: 4px solid transparent;
-    padding: 1% 1% 1%;
-    width:50vh;
-    font-size: x-large;
+    .logo-img{
+        margin-right:15px;
+    }
+    
+    .home-links-box{
+        display: flex;
+        justify-content: space-between;
+    
+   }
+    .info-links{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    ul.nav-links, ul.home-links{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin:0;
+        padding:0 3% 0%;
+    }
+
+    .home-image{
+        width:100%;
+        max-height: 88.5vh;
+    }
+
+    .aboutus-content{
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .truck-img{
+        width: 100%;
+        height:auto;
+        border-radius: 30px;
+        border: 4px solid transparent;
+    }
+    .aboutus-paragraph{
+        
+        border-radius: 30px;
+        border: 4px solid transparent;
+        padding: 1% 1% 1%;
+        width:50vh;
+        font-size: x-large;
+        text-align: center;
+    }
+
+   
+    .services{
+        margin:1% 1% 1%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .services-text{
+
+        border-radius: 30px;
+        border: 4px solid transparent;
+        margin: 1% 1% 1%;
+        padding: 1% 1% 1%;
+    }
+
+    .colour-options{
+        background-color: white;
+        border-radius: 30px;
+        border: 4px solid transparent;
+        text-align: center;
+        margin: 1% 1% 1%;
+        padding: 1% 1% 1%;
+    }
+    .colours-img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .services-list{
+        margin: 2% 2% 2%;
+    }
+    .finish-list{
+        margin: 2% 2% 2%;
+    }
+
+    ul.finish-list li{
+        margin: 2% 2% 2%;
+    }
+
+    ul.services-list li{
+        margin: 2% 2% 2%;
+    }
+
+    .gallery-images{
+        margin:1% 1% 1%;
+        width: 22vw;
+        height:auto;
+        border-radius: 15px;
+        border: 4px solid transparent;
+    }
+
+    h2.group-name{
     text-align: center;
-}
+    }
 
-.services{
-    margin:1% 1% 1%;
-    display:flex;
-    flex-wrap: wrap;
-}
+    .group-name-box{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
 
-.services-text{
-    background-color: white;
-    border-radius: 30px;
-    border: 4px solid transparent;
-    margin: 1% 1% 1%;
-    padding: 1% 1% 1%;
-}
+    .contact-box{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.colour-options{
-    background-color: white;
-    border-radius: 30px;
-    border: 4px solid transparent;
-    text-align: center;
-    margin: 1% 1% 1%;
-    padding: 1% 1% 1%;
-}
-.colours-img{
-    max-width: 100%;
-    height: auto;
-}
-
-.services-list{
-    margin: 2% 2% 2%;
-}
-.finish-list{
-    margin: 2% 2% 2%;
-}
-
-ul.finish-list li{
-    margin: 2% 2% 2%;
-}
-
-ul.services-list li{
-    margin: 2% 2% 2%;
-}
-
-.gallery-images{
-    margin:1% 1% 1%;
-    max-width: 575px;
-    min-width: 400px;
-    height:auto;
-    border-radius: 15px;
-    border: 4px solid transparent;
-}
-
-h2.group-name{
-   text-align: center;
-}
-
-.group-name-box{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  
-}
-
-.contact-box{
-    display:flex;
-    justify-content: center;
-
-}
-.contact-info{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    background-color: white;
-    border-radius: 30px;
-    border: 4px solid transparent;
-    margin: 1% 1% 1%;
-    padding: 0% 2% 0%;
-    width: 600px;
-}
+    .contact-info{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        border-radius: 30px;
+        border: 4px solid transparent;
+        margin: 1% 1% 1%;
+        padding: 0% 2% 0%;
+        
+    }
 
 
+    .message-box{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.message-box{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    h3.email-us{
+        align-self: center;
+    }
+
+    form{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 0% 2% 2%;
+        width:90%;
+        max-width: 600px;
+        border-radius: 15px;
+    }
+
+    form input,form textarea{
+        border:0;
+        border-radius: 10px;
+        margin:10px 0;
+        padding: 20px;
+        outline:none;
+        background-color: whitesmoke;
+        font-size: 16px;
+    }
+
+    form button{
+        padding:15px;
+        background-color: #e0474c;
+        font-size: 18px;
+        border:0;
+        outline:none;
+        cursor:pointer;
+        width:150px;
+        margin:20px auto 0;
+        border-radius: 30px;
+    }   
+
 }
-
-form{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 2% 2% 2%;
-    width:90%;
-    max-width: 600px;
-    border-radius: 15px;
-}
-
-form input,form textarea{
-    border:0;
-    border-radius: 10px;
-    margin:10px 0;
-    padding: 20px;
-    outline:none;
-    background-color: lightgray;
-    font-size: 16px;
-}
-
-form button{
-    padding:15px;
-    background-color: red;
-    font-size: 18px;
-    border:0;
-    outline:none;
-    cursor:pointer;
-    width:150px;
-    margin:20px auto 0;
-    border-radius: 30px;
-}   
