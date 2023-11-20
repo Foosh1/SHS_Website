@@ -268,7 +268,21 @@ a.nav-links,a.home-links{
         margin:0;
         padding:0 3% 0%;
     }
+    .home-photos{
+        margin:1% 1% 1%;
+        width: 25vw;
+        height:auto;
+        border-radius: 15px;
+        border: 4px solid transparent;
+        
 
+    }
+    .home-photos-box{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
     .aboutus-content{
         padding: 1%;
         display: flex;
